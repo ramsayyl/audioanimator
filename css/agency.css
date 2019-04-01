@@ -64,7 +64,7 @@ section h3.section-subhead {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 50px 0;
   }
 }
 
@@ -132,7 +132,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 90%;
+  /* font-size: 90%; */
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -154,13 +154,14 @@ img::-moz-selection {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    font-size: 1em;
+    font-size: 0.9em;
     letter-spacing: 1px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
+    font-size: 0.9em !important;
   }
   #mainNav.navbar-shrink {
     padding-top: 0;
@@ -168,14 +169,21 @@ img::-moz-selection {
     background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding: 12px 0;
   }
 }
 
+@media (min-width: 320px) {
+  #mainNav .navbar-brand {
+    font-size: 0.85em;
+  }
+
+}
+
 header.masthead {
   text-align: center;
-  color: white;
+  /* color: white; */
   background-image: url("../img/unsplash-new.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -743,10 +751,14 @@ section#about div.featured {
 }
 
 section#about .about-image {
-  height: 600px;
+  height: inherit;
   /* background-image: url("../img/avatar.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover; */
+}
+
+section#clients .sponsor-client {
+  padding: 10px;
 }
