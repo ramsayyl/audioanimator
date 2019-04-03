@@ -180,15 +180,14 @@ img::-moz-selection {
   }
 
 }
-
-header.masthead {
-  text-align: center;
-  /* color: white; */
-  background-image: url("../img/unsplash-new.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
+@media (max-width: 768px) {
+  header.masthead {
+    text-align: center;
+    background-image: url("../img/unsplash-new.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 header.masthead .intro-text {
@@ -222,11 +221,21 @@ header.masthead .intro-text .intro-heading {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
   }
+
+  header.masthead {
+      text-align: center;
+      background-image: url("../img/unsplash-new.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center center;
+      background-size: cover;
+    }
+
   /* header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
     font-style: italic;
@@ -751,14 +760,20 @@ section#about div.featured {
 }
 
 section#about .about-image {
-  height: inherit;
-  /* background-image: url("../img/avatar.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover; */
+  height: 600px;
 }
 
 section#clients .sponsor-client {
   padding: 10px;
+}
+
+section#audio .demo-subheading {
+  letter-spacing: 0.5px;
+  color: #505050;
+}
+
+section#audio .demo-icon {
+  color: #505050;
+  border: 2px solid #fed136;
+  border-radius: 50%;
 }
