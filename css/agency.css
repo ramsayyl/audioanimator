@@ -785,3 +785,8 @@ section#audio .demo-icon {
   border: 2px solid #fed136;
   border-radius: 50%;
 }
+
+section#clients .sponsor-client {
+  margin: auto;
+  padding: 35px;
+}
